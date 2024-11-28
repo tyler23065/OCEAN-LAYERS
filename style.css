@@ -1,0 +1,262 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg {
+    background-image: url('bg.gif');
+    background-repeat: repeat-x; 
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center top; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000vh; 
+    z-index: -1; 
+}
+
+.navbar {
+    background: linear-gradient(0deg, rgba(193,191,189,0) 0%, rgba(0,0,0,0.8911939775910365) 100%);
+    font-family: Quicksand, sans-serif;
+    padding-right: 15px;
+    padding-left: 15px;
+    height: 80px;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 150px; 
+    height: 150px; 
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+li a {
+    color: white; 
+    font-size: 23px;  
+    margin-right: 25px;
+    line-height: 3;
+    position: relative; 
+    display: inline-block; 
+}
+
+li a::after {
+    content: ''; 
+    position: absolute;
+    bottom: 5px; 
+    left: 0;
+    width: 0; 
+    height: 2px; 
+    background-color: white; 
+    transition: width 0.3s ease; 
+}
+
+li a:hover::after {
+    width: 100%; 
+}
+
+.content {
+    padding: 20px;
+}
+.ilo{
+    margin-top: 850px;
+    width: 100%;
+    box-shadow: -1px 4px 59px 3px rgba(0,0,0,0.75);
+    max-width: 1880px;
+    border-radius: 70px;
+    display: grid;
+    align-items: center;  
+    justify-items: center;
+    margin-left: 100px;
+    background-image: linear-gradient(0deg, #050809 0%, #10151c 37%, #405572 71%, #3c77cb 100%);
+    height: 1050px;  
+    border-radius: 70px;
+}
+h1 {
+    font-size: 140px;
+    font-family: RUBIK;
+    text-shadow: 4px 4px 10px #000000;
+    margin-top: 350px;
+    color: white;
+    text-align: center;
+}
+.expect{
+    font-size: 100px;
+    font-family: RUBIK;
+    color: white;
+    line-height: 3;
+    text-align: center;
+    text-shadow: 1px 1px 9px rgba(0,0,0,0.75);
+}
+
+.start{
+    font-size: 60px;
+    font-family: RUBIK;
+    text-shadow: 4px 4px 10px #000000;
+    color: white;
+    text-align: center;
+    margin-top: 800px;
+}
+.pbox {
+    margin-top: 2000px;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    border: 3px solid white;
+    border-radius: 100px;
+    width: 1000px;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    box-sizing: border-box; 
+}
+
+
+.con {
+    font-family: Quicksand;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    max-width: 1500px; 
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word; 
+    
+
+}
+
+.circle-arrow {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    border-left: 3px solid white; 
+    border-bottom: 3px solid white; 
+    transform: rotate(315deg); 
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 400px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-items: center;
+
+}
+
+.portfolio-item {
+
+    width: 500px;
+    height: 550px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item .aqua {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.portfolio-item .ocean {
+    width: 60%;
+    height: 200px;
+    object-fit: cover;
+    margin-left: 95px;
+}
+.portfolio-item .desc {
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 60px;
+    color: white;
+    font-family: RUBIK;
+    line-height: 2;
+    text-shadow: ;
+}
+
+.p1 {
+    font-family: Quicksand;
+    color: white;
+    font-size: 30px;
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word; 
+    
+
+}
+
+.main {
+    margin-top: 500px;
+   
+}
+
+.tile{
+    font-size: 35px;
+}
+
+.t1{
+    font-size: 35px;
+}
+
+@media screen and (max-width: 768px) {
+    .box1 {
+        margin-top: 200px; 
+        height: 800px; 
+        box-shadow: 0px -15px 30px rgba(0, 0, 0, 0.5); 
+    }
+
+    h1{
+        font-size: 55px;
+        margin-top: 200px;
+    }
+
+    .info {
+        margin-top: 230px;
+        
+    }
+
+    h3{
+        font-size: 40px;
+        max-width: 1000px;
+    }
+
+    p{
+        font-size: 12px;
+        max-width: 300px;
+    }
+
+    .logo img{
+        width: 100px;
+        height: 100px;
+    }
+
+    li a{
+        font-size: 17px;
+    }
+}
